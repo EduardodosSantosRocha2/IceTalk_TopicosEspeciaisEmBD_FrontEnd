@@ -1,0 +1,15 @@
+body {
+    background-color: #ccc5b9;
+    background-image: url("/IceTalk_FrontEnd/site/folders/img/ice.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+
+.blur{
+    background-color:rgba(246, 246, 246, 0.553);
+    left: 50%;
+    right: ;
+
+}
+

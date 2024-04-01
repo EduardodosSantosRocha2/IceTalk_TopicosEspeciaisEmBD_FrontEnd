@@ -1,0 +1,25 @@
+body {
+    background-color: #ccc5b9;
+    background-image: url("/IceTalk_FrontEnd/site/folders/img/ice.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    pad
+}
+
+
+.blur {
+    background-color: rgba(246, 246, 246, 0.553);
+    position: relative;
+    left: 10%;
+    width: 80%;   
+}

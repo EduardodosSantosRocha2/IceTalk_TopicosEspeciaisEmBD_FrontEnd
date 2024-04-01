@@ -1,0 +1,79 @@
+body {
+    background-color: #B2EBF2; /* Cor de fundo azul claro */
+    overflow: hidden; /* Para esconder os sorvetes que estão fora do corpo da página */
+}
+
+/* Container para os sorvetes */
+.sorvetes {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Sorvete */
+.sorvete {
+    position: absolute;
+    bottom: -150px; /* Posição inicial abaixo do corpo da página */
+    width: 100px;
+    height: 200px;
+    background-color: #FFC107; /* Amarelo */
+    border-radius: 50%;
+    animation: cairSorvete 10s infinite linear;
+}
+
+/* Animação de cair sorvete */
+@keyframes cairSorvete {
+    0% {
+        transform: translateY(-150px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+/* Texto "Sorveteria" */
+.sorveteria-texto {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50; /* Verde */
+}
+
+/* Criando diferentes sorvetes */
+.sorvete:nth-child(2) {
+    left: 20%;
+    width: 120px;
+    height: 220px;
+    background-color: #FF5722; /* Laranja */
+    animation-delay: 1s; /* Delay para começar a animação */
+}
+
+.sorvete:nth-child(3) {
+    left: 40%;
+    width: 80px;
+    height: 180px;
+    background-color: #3F51B5; /* Azul */
+    animation-duration: 12s; /* Duração da animação */
+}
+
+.sorvete:nth-child(4) {
+    left: 60%;
+    width: 90px;
+    height: 190px;
+    background-color: #E91E63; /* Rosa */
+    animation-duration: 8s; /* Duração da animação */
+    animation-delay: 3s; /* Delay para começar a animação */
+}
+
+.sorvete:nth-child(5) {
+    left: 80%;
+    width: 110px;
+    height: 210px;
+    background-color: #9C27B0; /* Roxo */
+    animation-duration: 11s; /* Duração da animação */
+    animation-delay: 2s; /* Delay para começar a animação */
+}
