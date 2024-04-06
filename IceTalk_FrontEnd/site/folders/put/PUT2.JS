@@ -13,10 +13,10 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
         .then(response => {
 
             if (!response.ok) {
-                pushNotify('error', "Erro", "Falha ao atualizar dados");
+                pushNotify('error', "Vazio", "escreva algo");
                 throw new Error('Erro ao enviar dados.');
             } else {
-                pushNotify("success", "Sucesso", "Dados atualizados com sucesso");
+                pushNotify("success", "Sucesso", "Dados enviados com sucesso");
             }
             return response.json();
         })
