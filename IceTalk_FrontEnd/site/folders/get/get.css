@@ -1,0 +1,35 @@
+body {
+    background-color: #ccc5b9;
+    background-image: url("/IceTalk_FrontEnd/site/folders/img/ice.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(2, 248, 195);
+}
+
+/* get.css */
+
+/* Estilo para o textarea */
+#textarea {
+    width: 80%; /* Defina a largura desejada */
+    max-width: 600px; /* Defina a largura máxima desejada */
+    height: 600px; /* Defina a altura desejada */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Impede o redimensionamento do textarea pelo usuário */
+    font-family: Arial, sans-serif; /* Fonte do texto */
+    font-size: 14px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    display: block; /* Define como um elemento de bloco */
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+  
+  /* Estilo adicional para destacar o textarea */
+  #textarea:focus {
+    border-color: #007bff; /* Cor da borda quando o textarea está focado */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra quando o textarea está focado */
+  }
+  
