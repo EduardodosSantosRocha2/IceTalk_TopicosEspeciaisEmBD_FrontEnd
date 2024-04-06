@@ -1,47 +1,47 @@
-/* Estilo para o corpo da página */
 body {
-    font-family: Lato, sans-serif;
-    background-color: #FFFFFF;
-    /*background-image: url("../img/ice.jpg");
-    background-size: cover;
-    */background-repeat: no-repeat;
+  background-color: #ccc5b9;
+  background-image: url("/IceTalk_FrontEnd/site/folders/img/ice.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0);
 }
-/* Estilo para a barra de navegação */
+
 .navbar.navbar-expand-lg.navbar-light.bg-light {
-    background-color: #b9ccbd !important; /* Azul Claro */
+    background-color: #b9ccbd !important; 
 }
 input{
     background-color: #FFF79C;
 }
-/* Estilo para o logotipo na barra de navegação */
+
 .navbar-brand img {
-    max-width: 40px; /* Define a largura máxima da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Faz a imagem se comportar como um bloco */
-    margin-top: 5px; /* Ajusta o espaçamento superior */
-    border-radius: 50%; /* Torna a imagem redonda */
+    max-width: 40px; 
+    height: auto; 
+    display: block; 
+    margin-top: 5px; 
+    border-radius: 50%; 
 }
 
-/* Estilo para os links na barra de navegação */
+
 .navbar-nav .nav-link {
-    color: #000000; /* Preto */
+    color: #000000; 
 }
 
-/* Estilo para os links na barra de navegação quando hover */
+
 .navbar-nav .nav-item .nav-link:hover {
-    color: #FF96C5; /* Rosa Sorvete */
+    color: #FF96C5; 
 }
 
-/* Estilo para os botões */
+
 .btn {
-    background-color: #FF96C5; /* Rosa Sorvete */
-    color: #FFFFFF; /* Branco */
-    border: none; /* Remove a borda */
+    background-color: #FF96C5; 
+    color: #FFFFFF; 
+    border: none; 
 }
 
-/* Estilo para os botões quando hover */
+
 .btn:hover {
-    background-color: #FF7EB9; /* Rosa Sorvete mais escuro */
+    background-color: #FF7EB9; 
 }
 .mt-5{
     background-color: #ffffff;
@@ -51,9 +51,9 @@ input{
 }
 
 #img{
-    max-width: 100%; /* Define a largura máxima da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Faz a imagem se comportar como um bloco */
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
     padding-bottom: 5%;
 }
 
@@ -62,45 +62,63 @@ input{
 }
 
 
-  /* Estilo para o container dos cards */
   .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  /* Estilo para cada card */
   .card {
     margin: 10px;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px; /* Defina a largura máxima do card */
-    flex: 1 1 300px; /* Permite que os cards cresçam, mas mantenham a largura máxima de 300px */
+    max-width: 300px; 
+    flex: 1 1 300px; 
   }
 
-  /* Estilo para a imagem dentro do card */
   .card img {
     width: 100%;
     height: auto;
     display: block;
   }
 
-  /* Estilo para o texto do card */
   .card-text {
     padding: 15px;
-    background-color: #f8f9fa; /* Cor de fundo do texto */
+    background-color: #f8f9fa; 
   }
 
   .title {
     text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
-    color: #FF96C5; /* Rosa Sorvete */
+    color: #FF96C5; 
   }
 
-  /* Estilo para a lista de nomes */
   .names {
     text-align: center;
     font-size: 16px;
   }
+
+#textarea {
+  width: 80%; 
+  max-width: 600px; 
+  height: 600px; 
+  margin: 0 auto; 
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none; 
+  font-family: Arial, sans-serif; 
+  font-size: 14px; 
+  color: #333; 
+  display: block; 
+  text-align: left;
+}
+
+
+#textarea:focus {
+  border-color: #007bff; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}

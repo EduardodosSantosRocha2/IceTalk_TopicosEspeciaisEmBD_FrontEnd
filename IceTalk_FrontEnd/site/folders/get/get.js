@@ -1,11 +1,9 @@
 document.getElementById("myForm").addEventListener("submit", function (event) {
-    event.preventDefault(); // Evita o envio do formulário padrão
+    event.preventDefault(); 
 
-    formData = document.getElementById("cpf").value; // Obtém os dados do formulário
-    console.log(formData)
+    var formData = document.getElementById("cpf").value; 
     var url = 'http://localhost:8080/api/funcionarios/' + formData;
     var textarea = document.getElementById("textarea");
-    console.log(url)
 
     fetch(url, {
         method: 'GET',
@@ -15,19 +13,23 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     })
     .then(response => {
         if (!response.ok) {
-            pushNotify('error', "Vazio", "escreva algo");
+            pushNotify('error', "Erro", "Erro ao enviar dados.");
             throw new Error('Erro ao enviar dados.');
-        } else {
-            pushNotify("success", "Sucesso", "Dados enviados com sucesso");
         }
         return response.json();
     })
     .then(data => {
-        textarea.value = " CPF: "+data.cpf + "\n Email: "+ data.email + "\n Idade: " + data.idade +"\n Nome: "+data.nome + "\n Numero de Telefone: "+ data.numeroTelefone;
+        console.log(data);
+        textarea.value = "CPF: " + data.cpf + "\nEmail: " + data.email + "\nIdade: " + data.idade + "\nNome: " + data.nome + "\nNúmero de Telefone: " + data.numeroTelefone;
         pushNotify('success', "Conexão", "Conexão com o banco de dados bem-sucedida");
     })
     .catch(error => {
         console.error('Erro:', error);
+        if (error instanceof SyntaxError && error.message === "Unexpected end of JSON input") {
+            pushNotify("error", "Erro", "Resposta inválida do servidor: CPF inválido");
+        } else {
+            pushNotify("error", "Erro", "Erro ao buscar dados");
+        }
     });
 });
 

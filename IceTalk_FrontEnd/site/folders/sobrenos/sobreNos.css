@@ -1,23 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    list-style: none;
-    text-decoration: none;
-}
+body {
+    background-color: #ccc5b9;
+    background-image: url("/IceTalk_FrontEnd/site/folders/img/ice.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+  }
 :root{
-    --red:#d63a25;
+    --red:#b9ccbd;
     --white:#fff;
     --dark:#1e1c2a;
 }
 body{
     color: var(--dark);
-    background: var(--white);
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
 
 .home{
     width: 100%;
@@ -52,7 +54,7 @@ body{
     transition: all 0.5s;
 }
 .home-btn:hover{
-    background: #fc4c35;
+    background:#b9ccbd;
 }
 .home-img img{
     width: 30%;
@@ -112,4 +114,126 @@ body{
     .home-img{
         width: 125%;
     }
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background-color: #b9ccbd !important; 
+}
+input{
+    background-color: #FFF79C;
+}
+
+.navbar-brand img {
+    max-width: 40px; 
+    height: auto; 
+    display: block; 
+    margin-top: 5px; 
+    border-radius: 50%; 
+}
+
+
+.navbar-nav .nav-link {
+    color: #000000; 
+}
+
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #FF96C5; 
+}
+
+
+.btn {
+    background-color: #FF96C5; 
+    color: #FFFFFF; 
+    border: none;
+   
+}
+
+#blur {
+    background-color: #ffffff9f;
+    border-radius: 10px;
+  
+}
+
+.btn:hover {
+    background-color: #FF7EB9; 
+}
+.mt-5{
+    background-color: #ffffff;
+    padding: 20px 20px 30px 20px;
+    margin-bottom: 200px;
+    border-radius: 10px;
+}
+
+#img{
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    padding-bottom: 5%;
+}
+
+.container{
+    background-color: #b9ccbd;
+}
+
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px; 
+    flex: 1 1 300px; 
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .card-text {
+    padding: 15px;
+    background-color: #f8f9fa; 
+  }
+
+  .title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FF96C5; 
+  }
+
+  .names {
+    text-align: center;
+    font-size: 16px;
+  }
+
+#textarea {
+  width: 80%; 
+  max-width: 600px; 
+  height: 600px; 
+  margin: 0 auto; 
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none; 
+  font-family: Arial, sans-serif; 
+  font-size: 14px; 
+  color: #333; 
+  display: block; 
+  text-align: left;
+}
+
+
+#textarea:focus {
+  border-color: #007bff; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
 }
